@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- StyleSheet -->
-    <link rel="stylesheet" href="file.css">
-    <!-- Global font Links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet"> 
-    <!-- FontAwesome Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
-</head>
-<body>
-    <!-- project 1 : Quote Generator -->
-<!-- <div class="container">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- StyleSheet -->
+        <link rel="stylesheet" href="file.css" />
+        <!-- Global font Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap"
+            rel="stylesheet"
+        />
+        <!-- FontAwesome Link -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- project 1 : Quote Generator -->
+
+        <!-- <div class="container">
     <div class="header">
         <h2>JavaScript Quote Generator</h2>
     </div>
@@ -34,28 +44,69 @@
     </div>
 </div> -->
 
-<!-- Project 2 : Modal Window -->
+        <!-- Project 2 : Modal Window -->
 
-<!-- Modal open button -->
+        <!-- Modal open button -->
 
-<button id="open-btn">
+        <!-- <button id="open-btn">
     <p>Where's Our Modal</p>
-</button>
+</button> -->
 
-<!-- Modal and modal background -->
+        <!-- Modal and modal background -->
 
-<dive id="modal-container">
+        <!-- <div id="modal-container">
     <div id="modal">
         <p>Here I am!</p>
         <div id="close-btn">&times;</div>
     </div>
-</dive>
+</div> -->
 
+        <!-- Project 3 : Accordion FAQ -->
 
+        <!-- <nav id="accordion" class="accordion"> -->
+        <!-- <button id="open-menu-button" class="menu-button hide">menu</button> -->
 
+        <nav id="accordion" class="accordion">
+            <button id="close-menu-button" class="close-menu-button">
+                <div class="menu-icon"></div>
+            </button>
+            <!-- <h2 class="accordion-title">Frequently Asked Questions</h2> -->
+            <ul class="content-container">
+                <li class="question">What is the return Policy?</li>
+                <li class="answer">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="content-container">
+                <li class="question">What is the return Policy?</li>
+                <li class="answer">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni, illo quod facere dolores eaque vero quibusdam alias
+                    ex cum a veritatis doloribus numquam ratione ducimus commodi
+                    dolore repellendus beatae cumque.
+                </li>
+            </ul>
+            <ul class="content-container">
+                <li class="question">What is the return Policy?</li>
+                <li class="answer">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni, illo quod facere dolores eaque vero quibusdam alias
+                    ex cum a veritatis doloribus numquam ratione ducimus commodi
+                    dolore repellendus beatae cumque.
+                </li>
+            </ul>
+        </nav>
 
+        <!-- Quick other DOM manipulation video example -->
+        <!-- <h1 id="headerOne" class="title">Hello</h1>
+    <input id="textInput" type="text" value="text in input here" /><br />
+    <button class="changeColor">Click me</button><br />
+    <button id="btn">Click me btn id</button> -->
 
-<!-- SCRIPTS -->
-<script src="app.js"></script>
-</body>
+        <!-- SCRIPTS -->
+        <script src="app.js"></script>
+    </body>
 </html>
