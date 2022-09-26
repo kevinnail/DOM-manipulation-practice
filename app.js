@@ -84,18 +84,20 @@
 
 //  Variable
 const accordion = document.getElementsByClassName("content-container");
-// const buttonOpen = document.getElementById("open-menu-button");
+const buttonOpen = document.getElementById("open-menu-button");
 const buttonClose = document.getElementById("close-menu-button");
 const accordionContainer = document.getElementById("accordion");
 
-// buttonOpen.addEventListener("click", () => {
-//     accordionContainer.classList.toggle("hide");
-//     buttonOpen.classList.toggle("hide");
-// });
+buttonOpen.addEventListener("click", () => {
+    accordionContainer.classList.toggle("hide");
+    // buttonClose.classList.toggle("change-button");
+    buttonOpen.classList.toggle("change-button");
+});
 
 buttonClose.addEventListener("click", () => {
     accordionContainer.classList.toggle("hide");
-    buttonClose.classList.toggle("change-button");
+    // buttonClose.classList.toggle("change-button");
+    buttonOpen.classList.toggle("change-button");
 });
 
 for (i = 0; i < accordion.length; i++) {

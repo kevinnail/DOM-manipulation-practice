@@ -218,22 +218,23 @@ body {
 }
 
 .accordion {
-    width: 65%;
+    /* width: 65%; */
     background-color: #fff;
     padding: 30px;
     border-radius: 0px;
     position: absolute;
     left: 0;
     top: 0;
-    width: 250px;
-    /* transition: ease-out;*/
+    width: 400px;
+    transition: ease-out;
     /* transition-duration: 500ms; */
     display: block;
-    transform-origin: top center;
+    /* transform: translateX(500px); */
+    transition-duration: 1s;
 }
 
 .accordion .accordion-title {
-    margin-bottom: 30px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -253,7 +254,7 @@ body {
 
 .accordion .content-container .answer {
     padding-top: 15px;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
     width: 100%;
     height: 0px;
@@ -262,7 +263,9 @@ body {
 }
 
 /* Javascript styling link */
-
+.close-menu-button {
+    /* margin-bottom: 50px; */
+}
 .accordion .content-container.active .answer {
     height: 200px;
 }
@@ -274,10 +277,11 @@ body {
 
 .accordion .content-container.active .question::after {
     content: "-";
-    font-size: 30px;
+    font-size: 25px;
     transition: 0.5s;
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
+    /* transform: translateY(-15px); */
 }
 
 .menu-button {
@@ -295,13 +299,18 @@ body {
 
 .hide {
     position: absolute;
-    transform: translateX(-500px);
+    transform: translateX(-500px) scale(0);
+    transition-duration: 0.75s;
 }
 .change-button {
-    position: absolute;
-    display: contents;
-    top: 200px;
-    left: 700px;
+    transform: scale(0) rotate(720deg);
+    transition-duration: 1s;
+
+    /* position: absolute; */
+    /* display: contents; */
+    /* top: 200px;
+    left: 700px; */
+    /* transition-duration: 0.5s; */
 }
 
 .close-menu-button {
@@ -311,12 +320,13 @@ body {
     height: 50px;
     cursor: pointer;
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 5px;
+    top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
+    transition-duration: 0.5s;
 }
 
 .menu-icon,
